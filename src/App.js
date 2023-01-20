@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './components/Header';
-import { useState } from 'react';
-
-const user = {name:'Babashov'}
+import { useState,useMemo } from 'react';
 
 function App() {
   const [number,setNumber] = useState(0)
-  
+  const user = useMemo(()=>{
+    return {name:'Babashov'}
+  },[])
 
   return (
     <div className="App">
