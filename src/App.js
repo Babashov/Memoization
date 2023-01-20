@@ -2,9 +2,11 @@ import './App.css';
 import Header from './components/Header';
 import { useState } from 'react';
 
+const user = {name:'Babashov'}
+
 function App() {
   const [number,setNumber] = useState(0)
-  const user = {name:'Babashov'}
+  
 
   return (
     <div className="App">
